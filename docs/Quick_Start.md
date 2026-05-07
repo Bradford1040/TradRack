@@ -87,9 +87,9 @@ TR_SERVO_UP
 ```
 
 Then run the following gcode command, and this time observe the motion
-of the servo. When viewed from the front of the servo spline, the 
+of the servo. When viewed from the front of the servo spline, the
 servo should rotate clockwise:
-    
+
 ```
 TR_SERVO_DOWN FORCE=1
 ```
@@ -170,7 +170,7 @@ clockwise:
 TR_SERVO_TEST ANGLE=<angle>
 ```
 
-Repeat with different angles as necessary until the servo is 
+Repeat with different angles as necessary until the servo is
 within the target range.
 
 Once the servo aligns well enough with the slots that the screw can
@@ -189,8 +189,13 @@ Finally, reattach the servo to Trad Rack.
 ## Selector calibration
 
 This section involves calibrating `lane_spacing`, as well as the min,
-endstop, and max positions of the selector motor. You will need access
-to filament (either a spool or a short piece is fine).
+endstop, and max positions of the selector motor.
+
+You will be prompted to enter the `TR_NEXT` macro several times during
+the calibration procedure. You should be prepared to load filament
+into the first and last lanes when prompted during the procedure.
+You can pre-load each lane if you wish to prevent timeouts, or you can
+use the same piece of test filament for both lanes.
 
 Run the following gcode command and follow the instructions in the
 console:
