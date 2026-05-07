@@ -189,14 +189,13 @@ Finally, reattach the servo to Trad Rack.
 ## Selector calibration
 
 This section involves calibrating `lane_spacing`, as well as the min,
-endstop, and max positions of the selector motor. You will need 2
-lengths of filament approximately 100mm min each. Spools are also ok.
+endstop, and max positions of the selector motor.
 
-Insert one length into Lane 0, and insert the other length of filament
-into your last lane. Make sure the filament is inserted far enough
-for the filament driver to grab, but not far enough to impede travel
-of the filament selector.
-
+You will be prompted to enter the `TR_NEXT` macro several times during
+the calibration procedure. You should be prepared to load filament
+into the first and last lanes when prompted during the procedure.
+You can pre-load each lane if you wish to prevent timeouts, or you can
+use the same piece of test filament for both lanes.
 
 Run the following gcode command and follow the instructions in the
 console:
